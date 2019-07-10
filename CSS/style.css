@@ -34,9 +34,21 @@ body{
 #scrollup:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+
 /*-- Navigation --*/
-
-
+.navbar-background-gray{
+  background-color: #000!important;
+}
+.nav-item a{
+  color: #FFF!important;
+}
+.nav-item a:hover{
+  color: #777!important;
+}
+span.navbar-toggler-icon{
+  color: #fff;
+}
 /*-- End Navigation --*/
 
 
@@ -72,8 +84,8 @@ body{
   top: 0;
   left: 0;
   z-index: 1;
-  background: #730A13;
-  opacity: 0.60;
+  background-color: #000;
+  opacity: 0.70;
 }
 .header-content{
   z-index: 2;
@@ -99,13 +111,13 @@ body{
 
 /*-- Skills --*/
 .js-img, .css-img, .bootstrap-img{
-  max-height: 250px;
-  max-width: 250px;
+  width: 50%;
+  height: 50%;
   margin: 20px auto;
   margin-bottom: 100px!important;
 }
 .bg-skills{
-  background: #BF2431;
+  background: #403D3C;
 }
 /*-- End Skills --*/
 
@@ -134,15 +146,19 @@ body{
   margin: 0 auto;
   font-size: 30px;
   line-height: 55px;
+  color: #000;
 }
 .profile-image{
-  border-radius: 50%;
-  height: 500px;
-  width: 500px;
+  border-radius: 15%;
+  height: 80%;
+  width: 80%;
   margin: 0 auto;
 }
+.about-heading{
+  color: #000;
+}
 .bg-about{
-  background: #730A13;
+  background: #FFF;
 }
 /*-- End About Me --*/
 
@@ -168,23 +184,25 @@ body{
   color: black;
 }
 .bg-projects{
-  background: #D93232;
+  background: #403D3C;
 }
 .btn-primary{
-  background-color: #A61717;
+  background-color: #000;
 }
 /*-- End Projects Section --*/
 
 
 /*-- Work With Me --*/
-.reason-text, .reason-header{
+.reason-heading, .reason-text, .reason-header{
   text-align: center;
   padding: 20px;
+  color: #000;
 }
 .icon{
   display: inline-block;
   width: 100%;
   text-align: center;
+  color: #000;
 }
 .heading-underline1{
   background-color: #000;
@@ -195,7 +213,7 @@ body{
   margin-top: 1rem;
 }
 .bg-work{
-  background: #A61717;
+  background: #FFF;
 }
 /*-- End Work With Me --*/
 
@@ -208,7 +226,7 @@ body{
   height: 200px;
 }
 #fname, #lname, #email, #mssg{
-  width: 400px;
+  width: 65vw;
   border-radius: 5px;
 }
 label{
@@ -216,14 +234,18 @@ label{
 }
 input{
   margin-bottom: 10px;
+  border: none;
+}
+form{
+  align-items: center;
 }
 .submit{
   margin-top: 5px;
-  width: 400px;
-  background-color: #fff;
+  width: 65vw;
+  background-color: #000;
   border: none;
   border-radius: 5px;
-  color: #000;
+  color: #FFF;
 }
 .submit:hover{
   background-color: #ccc;
@@ -281,20 +303,3 @@ div#contact{
     margin-top: 1rem;
     margin-bottom: 2.5rem;
   }
-
-  // Extra small devices (portrait phones, less than 576px)
-  // No media query for `xs` since this is the default in Bootstrap
-
-  // Small devices (landscape phones, 576px and up)
-  @media (min-width: 576px) { ... }
-
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) { ... }
-
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) { ... }
-
-  // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) { ... }
-}
-/*-- Test --*/
