@@ -22,14 +22,14 @@
 		<div class="header-overlay"></div>
 		<div class="header-content">
 			<h1 class="animated fadeInLeftBig">Hello, I'm Nathan. <br>I build internet things.</h1>
-			<a href="#hello" class="btn navig animated fadeInUp">Let's Go</a>
+			<a href="#hello" class="btn">Let's Go</a>
 		</div>
 	</header>
 	<!-- End Landing Page Section -->
 
 
 	<!-- Navigation Section --> 
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark" id="hello">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-background-gray" id="hello">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -49,7 +49,7 @@
 					<a class="nav-link slide" href="#contact">Contact</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="Resources/resume.pdf" download="Resources/resume.pdf">Resume</a>
+					<a class="nav-link" href="resume.pdf" target='_blank'  download>Resume</a>
 				</li>
 			</ul>
 		</div>
@@ -94,14 +94,14 @@
 	<div class="jumbotron bg-about" id="about">
 
 		<div class="col-12 text-center">
-			<h3 class="heading">About Me</h3>
+			<h3 class="heading about-heading">About Me</h3>
 			<div class="heading-underline"></div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-6 order-md-2">
 				<div class="row">
-					<img class="profile-image aboutmep wow fadeIn" src="img/computerguy.png">
+					<img class="profile-image aboutmep wow fadeIn" src="img/skeleton.jpg" data-wow-delay="0.1s">
 				</div>
 			</div>
 
@@ -178,7 +178,7 @@
 	<div class="jumbotron bg-work" id="workwithme">
 
 		<div class="col-12 text-center">
-			<h3 id="question">Why work with me?</h3>
+			<h3 id="question" class="reason-heading">Why work with me?</h3>
 			<div class="heading-underline1"></div>
 		</div>
 
@@ -212,9 +212,9 @@
 			<h4 class="question2 wow tada">Have questions? Feel free to reach out.</h4>
 
 			<div class="col-12">
-				<form method="POST" data-netlify="true">
+				<form action="contactform.php" method="post">
 					<label for="name">First Name</label><br>
-					<input type="text" id="fname" name="firstname" placeholder="Your first name.."><br>
+					<input type="text" id="fname" name="firstname" placeholder="Your full name.."><br>
 					<label for="lastname">Last Name</label><br>
 					<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
 					<label for="email">Email Address</label><br>
